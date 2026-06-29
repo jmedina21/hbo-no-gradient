@@ -10,14 +10,14 @@
 // ==/UserScript==
 
 (function () {
-  'use strict';
-  const style = document.createElement('style');
-  style.textContent = `
+    "use strict";
+    const style = document.createElement("style");
+    style.textContent = `
     [class*="BottomGradient"],
     [class*="TopGradient"],
     [class*="StyledProtection-Fuse-Web-Play"] {
       display: none !important;
     }
   `;
-  document.documentElement.appendChild(style);
+    document.documentElement.appendChild(style);
 })();
